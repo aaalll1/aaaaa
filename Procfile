@@ -1,1 +1,0 @@
-worker: python aaa.py
