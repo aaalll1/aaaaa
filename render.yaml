@@ -1,0 +1,11 @@
+services:
+  - type: web
+    plan: free
+    name: Scorpion 
+    env: python
+    buildCommand: pip install -U -r requirements.txt
+    startCommand: gunicorn ser:app & bash start
+    region: frankfurt #frankfurt #Singapore
+    envVars:
+      - key: BOT_TOKEN 
+        value: 7249491605:AAFHyPh2nZHOhEjTDTCKG81yNhoJJwDnBhU
